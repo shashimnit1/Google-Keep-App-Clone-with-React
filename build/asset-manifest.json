@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/Google-Keep-App-Clone-with-React/static/css/main.7575ecad.css",
-    "main.js": "/Google-Keep-App-Clone-with-React/static/js/main.a6b8302c.js",
+    "main.js": "/Google-Keep-App-Clone-with-React/static/js/main.393d7f9e.js",
     "static/media/logo.svg": "/Google-Keep-App-Clone-with-React/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/Google-Keep-App-Clone-with-React/index.html",
     "main.7575ecad.css.map": "/Google-Keep-App-Clone-with-React/static/css/main.7575ecad.css.map",
-    "main.a6b8302c.js.map": "/Google-Keep-App-Clone-with-React/static/js/main.a6b8302c.js.map"
+    "main.393d7f9e.js.map": "/Google-Keep-App-Clone-with-React/static/js/main.393d7f9e.js.map"
   },
   "entrypoints": [
     "static/css/main.7575ecad.css",
-    "static/js/main.a6b8302c.js"
+    "static/js/main.393d7f9e.js"
   ]
 }
