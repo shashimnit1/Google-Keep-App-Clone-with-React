@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import AddIcon from '@mui/icons-material/Add';
+
 const CreateNote = (props) => {
     const [note, setNote] = useState({
         title: "",
@@ -43,9 +44,9 @@ const CreateNote = (props) => {
                 <form className="box1" onSubmit={submitTask}>
                     <input className="input1" type="text" placeholder="Title" name="title" onChange={input} value={note.title}></input>
 
-                    <textarea rows={4} cols={41} placeholder="Enter the Details" onChange={input} name="text" value={note.text}></textarea>
+                    <textarea style={{fontSize:"1.5rem"}} rows={4} cols={41} placeholder="Enter the Details" onChange={input} name="text" value={note.text}></textarea>
 
-                    <button type="submit"><AddIcon /></button>
+                    <button style={{fontSize:"1.5rem"}} type="submit"><AddIcon/></button>
 
                 </form>
             </div>

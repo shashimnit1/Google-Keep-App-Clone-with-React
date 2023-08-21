@@ -14,13 +14,13 @@ function App() {
     setAllNotes((prev1) => {
       return [...prev1, note]
     });
-    
+
   }
 
   const deleteNote = (id) => {
-    
-    
-    const tempList=allNotes.filter((x,index)=>index!==id);
+
+
+    const tempList = allNotes.filter((x, index) => index !== id);
     setAllNotes(tempList);
   }
 
@@ -29,6 +29,9 @@ function App() {
       <Nav />
       <div className='createNoteBox'>
         <CreateNote data={addItem} />
+      </div>
+      <div className='line'>
+        <hr style={{ width: "70%", height: "0.2rem", align: "center" }}></hr>
       </div>
       <p className="h3" style={{ textAlign: "center" }}> Saved Notes</p>
       <div className='NoteBox'>

@@ -1,139 +1,167 @@
-.App {
-  text-align: center;
+html {
+  font-size: 62.5%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+/* Smallest Devices */
+@media screen and (max-width: 57.5rem) {
+  html {
+    font-size: 30%;
+  }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+  .NoteBox {
+    min-height: 10rem;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* Small devices (landscape phones, 57.6rem and up) */
+@media screen and (min-width: 57.6rem) {
+  html {
+    font-size: 48%;
+  }
+}
+
+/* Medium devices (tablets, 76.8rem and up) */
+@media screen and (min-width: 76.8rem) {
+  html {
+    font-size: 64%;
+  }
+}
+
+/* Large devices (desktops, 99.2rem and up) */
+@media screen and (min-width: 99.2rem) {
+  html {
+    font-size: 82.66%;
+  }
+}
+
+/* Extra large devices (large desktops, 120.0rem and up) */
+@media (min-width: 120.0rem) {
+  html {
+    font-size: 100%;
+  }
+}
+.line{
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-direction: row;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  color: #0c0c0c;
 }
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-
 .createNoteBox {
   width: 100vw;
-  //height: 35vh;
   height: fit-content;
-  
-  //border: 2pt solid black;
+
+  //border: .2rem solid black;
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
 .NoteBox {
+  
   width: 100vw;
+  
+  min-height: 30rem;
   height: fit-content;
-  margin: 5px;
-  //border: 2pt solid black;
+  margin: .5rem;
+  //border: .2rem solid rgb(227, 24, 193);
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-around;
   flex-wrap: wrap;
 }
-.box1{
-  margin-top: 10px;
+
+.box1 {
+  margin-top: 1.0rem;
   background-color: rgb(180, 249, 250);
+  min-width: 18rem;
   width: 30vw;
   height: fit-content;
-  //border: 2pt solid black;
+  //border: .2rem solid rgb(239, 18, 18);
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-  border-radius: 20pt;
+  box-shadow: rgba(0, 0, 0, 0.35) 0rem .5rem 1.5rem;
+  border-radius: 2.0rem;
 
 }
-.box2{
+
+.box2 {
   background-color: rgb(180, 249, 250);
-  width: 20vw;
-  height: 28vh;
-  margin: 5px;
-  //border: 2pt solid black;
+  min-width: 10rem;
+  width: 17vw;
+  
+  min-height: 13rem;
+  margin: .5rem;
+  //border: .2rem solid rgb(31, 153, 74);
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-  border-radius: 20pt;
+  box-shadow: rgba(0, 0, 0, 0.35) 0rem .5rem 1.5rem;
+  border-radius: 2.0rem;
 
 }
+
 .input1 {
   width: 90%;
   height: 7vh;
   text-align: center;
 
   background-color: transparent;
-  border: 0px solid;
-  font-family: inherit;
+  border: 0rem solid;
   color: black;
-  font-size: 20px;
+  font-size: 2rem;
   font-weight: bold;
-  box-shadow: inset 0 -1px 0;
+  box-shadow: inset 0 -.1rem 0;
 
 }
+
 *:focus {
   outline: none;
 }
+
 ::placeholder {
   color: rgb(37, 34, 34);
-  font-size: large;
+  font-size: 2rem;
 }
-textarea{
+
+textarea {
   color: #0c0c0c;
+  font-size: 5rem;
   background: transparent;
   border: none;
   outline: none;
   text-align: center;
-  
+
 }
+
 hr {
-  height:5px;
-  border-width:0;
-  background-color:#e163a4;
+  height: 2.5rem;
+  border-width: 0;
+  background-color: #e163a4;
 }
 button{
- 
-  background-color: transparent;
-  border: 0;
-  color: #1c1a1a;
-  font-size: 20px;
-  /* margin: 2px;
-  padding: 2px 9px;
-   */
+  cursor: pointer;
+  outline: 0;
+  display: inline-block;
   
-}
-button:active{
-  color: red;
+  text-align: center;
+  background-color: transparent;
+  border: 0pt;
+  padding: .6rem 1.2rem;
+  font-size: 3rem;
   font-weight: bold;
+  border-radius: .25rem;
+  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+  color: #0d6efd;
+  border-color: #0d6efd;
+  :hover {
+      color: #fff;
+      background-color: #0d6efd;
+      border-color: #0d6efd;
+  }
+
 }

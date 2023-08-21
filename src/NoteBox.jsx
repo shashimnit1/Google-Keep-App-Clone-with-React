@@ -11,9 +11,9 @@ const NoteBox = (Props) => {
     return (
         <>
             <div className="box2">
-                <h2 style={{ borderBottom: "1pt solid black", fontSize: "20px" }}> {Props.addNote.title}</h2>
-                <div style={{ width: "95%", height: "90%", textAlign: "center" }}>
-                    {Props.addNote.text}
+                <h2 style={{ borderBottom: ".1rem solid black", fontWeight:"bold",fontSize: "2.0rem" }}> {Props.addNote.title}</h2>
+                <div style={{ width: "95%", height: "90%", textAlign: "center", fontSize:"1.5rem" }}>
+                    {Props.addNote.text} 
                 </div>
 
                 <button onClick={onDelete} style={{ alignSelf: "center" }}><DeleteForeverIcon /></button>
